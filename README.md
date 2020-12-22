@@ -1,4 +1,9 @@
 # HyperparameterSteepness
+
+Very often in machine learning, one needs to control a hyperparameter value such as the learning rate over the epochs. A specific example would consist of an exponential decay of a learning rate eta over the epochs. However, the optimal shape of such a controlling curve is not known. Either a fast decay, linear decay or even a slow-start decay are needed. Similar to the gamma parameter in image-intensity adjustment, a single parameter, here alpha, can control the convexity of the hyperparameter curve over epochs. We have used the trick in training of Kohohen maps and in controlling the leniency of a reward schedule in reinforcement learning (see below).
+
+![Screenshot](steepness-curves.png)
+
 Enclosed is the steepness .c program with a bash script and .png graph for several steepness (alpha) values. As an example, the tolerance runs from 0.4 in the beginning to 0.01 at the end.  
 
 You can make the binary by gcc steepness.c -lm -o steepness 
