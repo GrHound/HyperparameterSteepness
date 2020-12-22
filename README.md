@@ -1,5 +1,10 @@
 # HyperparameterSteepness
-Enclosed is the steepness .c program with a bash script and .png graph for several steepness (alpha) values. As an example, the tolerance runs from 0.4 in the beginning to 0.01 at the end.  You can make the binary by gcc steepness.c -lm -o steepness To run the demo script you need to install gnuplot The *.curves file and .png are already made.  
+Enclosed is the steepness .c program with a bash script and .png graph for several steepness (alpha) values. As an example, the tolerance runs from 0.4 in the beginning to 0.01 at the end.  
+
+You can make the binary by gcc steepness.c -lm -o steepness 
+
+To run the demo script you need to install gnuplot 
+The *.curves file and .png are already made and present in the package.  
 
 You can cite Schomaker &amp; Bulacu (2004), Eq. 8.  Schomaker, L &amp; Bulacu, M 2004, 'Automatic writer identification using connected-component contours and edge-based features of uppercase western script', Ieee transactions on pattern analysis and machine intelligence, vol. 26, no. 6, pp. 787-798.  
 
